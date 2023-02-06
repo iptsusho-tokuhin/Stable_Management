@@ -8,8 +8,8 @@ function Output_to_gas()
 	output[2] = his;
 	output[3] = [];
 	output[3][0] = [];
-	output[3][0][1] = document.getElementById('forum').value.replace(/\n/g, "<br>");
-	output[3][0][0] = "";
+	output[3][0][0] = document.getElementById('forum').value.replace(/\n/g, "<br>");
+	output[3][0][1] = "0";
 	
 	alert(JSON.stringify(output[3]));
 
