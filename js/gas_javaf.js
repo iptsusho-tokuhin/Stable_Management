@@ -2,7 +2,7 @@ function Output_to_gas()
 {
 	document.getElementById('startes').innerHTML = "保存中";
 	var text = '';
-	var output;
+	var output = [];
 	
 	output[0] = data;
 	output[1] = note;
