@@ -492,10 +492,10 @@ function set_history(h)				//操作履歴に追加
 
 function road_history()				//操作履歴を表示
 {
-	if(his[0].length != 0)
+	if(his.length != 0)
 	{
 		var text = '';
-		for(var i = his[0].length-1;i >= 0; i--){text += his[0][i] + '<br>';}
+		for(var i = his.length-1;i >= 0; i--){text += his[i][0] + '<br>';}
 		document.getElementById('history').innerHTML = text;
 	}
 }
