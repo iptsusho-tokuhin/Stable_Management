@@ -69,33 +69,4 @@ function output_to_html(DataJSON)
 	set_select();
 	document.getElementById('forum').value = forum;
 	document.getElementById('startes').innerHTML = "読込完了２";
-	
-	
-	
-	
-	
-	//動作試験
-	//var arr1 = text.split('***');
-	//var arr2 = [];
-	//var arr3 = [];
-	//for(var i = 0; i < arr1.length; i++)
-	//{
-	//	arr2[i] = arr1[i].split('\n');
-	//	arr2[i].pop();//各最後の行はごみデータになるので削除
-	//}
-	
-	//for(var i = 0; i < arr2.length; i++)
-	//{
-	//	arr3[i] = [];
-	//	for(var j = 0; j < arr2[i].length; j++)
-	//	{
-	//		arr3[i][j] = arr2[i][j].split(',');
-	//		arr3[i][j].pop();//各最後の行はごみデータになるので削除
-	//	}
-	//}
-	
-	//data = arr3[0];
-	//for(var i = 0; i < arr3[1].length; i++){note[i] = arr3[1][i][0];}
-	//for(var i = 0; i < arr3[2].length; i++){his[i] = arr3[2][i][0];}
-	//forum = arr3[3][0][0].replace(/<br>/g, "\n");
 }
