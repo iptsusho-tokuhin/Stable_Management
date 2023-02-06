@@ -11,7 +11,7 @@ function Output_to_gas()
 	output[3][0][0] = document.getElementById('forum').value.replace(/\n/g, "<br>");
 	output[3][0][1] = "";
 	
-	alert(output[3][0][0]);
+	alert(JSON.stringify(output[3]);
 
 	let DataJSON = JSON.stringify(output);
 	google.script.run.withSuccessHandler(showStartes).write_ss(DataJSON);
