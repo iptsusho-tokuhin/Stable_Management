@@ -21,7 +21,7 @@ function showStartes(returnString)
 
 function Intput_from_gas()
 {
-	document.getElementById('startes').innerHTML = "読込中";
+	document.getElementById('startes').innerHTML = "読込中２";
 	google.script.run.withSuccessHandler(output_to_html).read_ss();
 }
 
