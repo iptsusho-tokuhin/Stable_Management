@@ -10,39 +10,9 @@ function Output_to_gas()
 	output[3] = [];
 	output[3][0] = [];
 	output[3][0][0] = document.getElementById('forum').value;
-	
-	
+
 	let DataJSON = JSON.stringify(output); 
 	google.script.run.withSuccessHandler(showStartes).write_ss(DataJSON);
-	
-	//for(var i = 0; i < data.length; i++)
-	//{
-	//	for(var j = 0; j < data[i].length; j++)
-	//	{
-	//			text += data[i][j] + ',';
-	//	}
-	//	text += '\n';
-	//}
-	
-	//text += '***';//データ区切り
-
-	//for(var i = 0; i < note.length; i++)
-	//{
-	//	text += note[i] + ',' + '\n';
-	//}
-	
-	//text += '***';//データ区切り
-	
-	//for(var i = 0; i < his.length; i++)
-	//{
-	//	text += his[i] + ',' + '\n';
-	//}
-	
-	//text += '***';//データ区切り
-	
-	//text += document.getElementById('forum').value.replace(/\r?\n/g, '<br>') + ',' + '\n';
-	
-	//google.script.run.withSuccessHandler(showStartes).write_ss(text);
 }
 
 function showStartes(returnString)
