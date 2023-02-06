@@ -7,6 +7,8 @@ function Output_to_gas()
 	output[0] = data;
 	output[1] = note;
 	output[2] = his;
+	output[3] = [];
+	output[3][0] = [];
 	output[3][0][0] = document.getElementById('forum').value;
 	
 	
