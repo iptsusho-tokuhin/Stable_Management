@@ -485,17 +485,17 @@ function set_history(h)				//操作履歴に追加
 	var min = ('00' + d.getMinutes()).slice(-2);
 	var sec = ('00' + d.getSeconds()).slice(-2);
 	var time = '[' + convert_date(d) + ' ' + hour + ':' + min + ':' + sec +']';
-	his.push(time + h);
+	his.push([time + h]);
 	road_history();
 	Output_to_gas();
 }
 
 function road_history()				//操作履歴を表示
 {
-	if(his.length != 0)
+	if(his[0].length != 0)
 	{
 		var text = '';
-		for(var i = his.length-1;i >= 0; i--){text += his[i] + '<br>';}
+		for(var i = his[0].length-1;i >= 0; i--){text += his[0][i] + '<br>';}
 		document.getElementById('history').innerHTML = text;
 	}
 }
