@@ -484,7 +484,7 @@ function set_history(h)				//操作履歴に追加
 	var hour = ('00' + d.getHours()).slice(-2);
 	var min = ('00' + d.getMinutes()).slice(-2);
 	var sec = ('00' + d.getSeconds()).slice(-2);
-	var time = '[' + convert_date(d) + ' ' + hour + ':' + min + ':' + sec +']';
+	var time = '(' + convert_date(d) + ' ' + hour + ':' + min + ':' + sec +')';
 	his.push([time + h]);
 	road_history();
 	Output_to_gas();
