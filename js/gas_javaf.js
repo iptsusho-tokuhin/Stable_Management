@@ -40,5 +40,5 @@ function output_to_html(DataJSON)
 	road_history();
 	set_select();
 	document.getElementById('forum').value = forum;
-	document.getElementById('startes').innerHTML = "読込完了２";
+	document.getElementById('startes').innerHTML = "読込完了";
 }
