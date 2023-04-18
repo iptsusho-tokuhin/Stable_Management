@@ -28,6 +28,7 @@ function Intput_from_gas()
 
 function output_to_html(DataJSON)
 {
+	alert(DataJSON);
 	var input = JSON.parse(DataJSON);
 	data = input[0];
 	note = input[1];
